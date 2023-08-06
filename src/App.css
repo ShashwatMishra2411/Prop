@@ -27,6 +27,9 @@
 .App-link {
   color: #61dafb;
 }
+h5{
+  font-size: 2vmin;
+}
 .nb{
   display: flex;
   justify-content: center;

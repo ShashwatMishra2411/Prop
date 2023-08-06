@@ -28,9 +28,10 @@ const swipe = ({product}) => {
       // onSwiper={(swiper) => console.log(swiper)}
       // onSlideChange={() => console.log('slide change')}
     >
-      <SwiperSlide><div className='s1' ><img src={product.images[0]} alt="" className="p1" /></div></SwiperSlide>
-      <SwiperSlide><div className='s2' ><img src={product.images[1]} alt="" className="p2" /></div></SwiperSlide>
-      <SwiperSlide><div className='s3' ><img src={product.images[2]} alt="" className="p3" /></div></SwiperSlide>
+      <SwiperSlide><div className='s1' ><img src={product.thumbnail} alt="" className="p1" /></div></SwiperSlide>
+      <SwiperSlide><div className='s2' ><img src={product.images[0]} alt="" className="p2" /></div></SwiperSlide>
+      <SwiperSlide><div className='s3' ><img src={product.images[1]} alt="" className="p3" /></div></SwiperSlide>
+      <SwiperSlide><div className='s4' ><img src={product.images[2]} alt="" className="p4" /></div></SwiperSlide>
       <SwiperSlide><div className='s4' ><img src={product.images[3]} alt="" className="p4" /></div></SwiperSlide>
       ...
     </Swiper>

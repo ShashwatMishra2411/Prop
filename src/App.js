@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './components/navbar'
 import Card from './components/card'
 import Carousel from './components/carousel'
+import Accordian from './components/accord'
 
 let p = [];
 await fetch('https://dummyjson.com/products')
@@ -24,39 +25,39 @@ function App() {
       <Card
       prop = {{
         title:`${p[0].title}`,
-        body:"lorem 200 wala emmet abbreviation"
+        body:`${p[0].description}`
       }}></Card>
       <Card
       prop = {{
         title:`${p[1].title}`,
-        body:"lorem 300 wala emmet abbreviation"
+        body:`${p[0].description}`
       }}></Card>
       <Card
       prop = {{
         title:`${p[2].title}`,
-        body:"lorem 400 wala emmet abbreviation"
+        body:`${p[0].description}`
       }}></Card>
       <Card
       prop = {{
         title:`${p[3].title}`,
-        body:"lorem 500 wala emmet abbreviation"
+        body:`${p[0].description}`
       }}></Card>
       <Card
       prop = {{
         title:`${p[4].title}`,
-        body:"lorem 600 wala emmet abbreviation"
+        body:`${p[0].description}`
       }}></Card>
     </div>
     <div className="sliders">
-    <h1 className='title'>{p[0].title}</h1>
+    <Accordian title={p[0].title} body={p[0].description} ></Accordian>
     <Carousel product={p[0]}></Carousel>
-    <h1 className='title'>{p[1].title}</h1>
+    <Accordian title={p[1].title} body={p[1].description} ></Accordian>    
     <Carousel product={p[1]}></Carousel>
-    <h1 className='title'>{p[2].title}</h1>
+    <Accordian title={p[2].title} body={p[2].description} ></Accordian>
     <Carousel product={p[2]}></Carousel>
-    <h1 className='title'>{p[3].title}</h1>
+    <Accordian title={p[3].title} body={p[3].description} ></Accordian>
     <Carousel product={p[3]}></Carousel>
-    <h1 className='title'>{p[4].title}</h1>
+    <Accordian title={p[4].title} body={p[4].description} ></Accordian>
     <Carousel product={p[4]}></Carousel>
     </div>
     </>
