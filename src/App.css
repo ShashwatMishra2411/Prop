@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+#root{
+  height: 100%;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -39,22 +41,34 @@ h5{
 .card{
   display: flex;
   flex-direction: column;
-  width: 18rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.1%;
 }
 .cards{
   display: flex;
   gap: 10px;
   justify-content: space-around;
   margin-top: 1%;
+  height: 20%;
 }
 .card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 2vmin;
+  padding: 5%;
+}
+.card-text{
+  text-align: center;
 }
 .btn{
   display: flex;
   justify-content: center;
   color: yellow;
-  width: 100%;
+  width: 50%;
   font-size: 1.5vmin;
   white-space: nowrap;
   overflow: hidden;
@@ -75,6 +89,46 @@ h5{
 }
 .title{
   margin: 3%;
+}
+.sdiv1{
+  position: relative;
+  display: flex;
+  height: 15vmin;
+  width: 15vmin;
+  left: 47vw;
+  justify-content: center;
+  align-items: center;
+  background: lightblue;
+  margin: 1%;
+  font-size: 70%;
+}
+.pharum{
+  display: flex;
+  flex-direction: column;
+}
+.fb{
+  align-self: center;
+}
+.tarea{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+  height: 100%;
+  background-color: grey;
+  padding: 1%;
+}
+#tarea{
+  margin-bottom: 1%;
+  width: 95%;
+}
+.buttons{
+  display: flex;
+  width: 100%;
+}
+.cb{
+  margin: 0.5%;
 }
 @keyframes App-logo-spin {
   from {
